@@ -7,13 +7,13 @@ import django
 import time
 import pprint		#Pretty Print
 import requests		#Requests
-
+import TwitterStreamKeys
 
 #Twython OAuth 1 Authentication
-APP_KEY		= 'k7IKJEvxIYiro0I4M7yVg'
-APP_SECRET	= #removed for git
-OAUTH_TOKEN = '2213564010-I0jWjQQUTXmo8ySlPCcvP2lX3B42VQWWh6lVHGf'
-OAUTH_TOKEN_SECRET = #removed for git
+APP_KEY				= TwitterStreamKeys.keys['APP_KEY']
+APP_SECRET			= TwitterStreamKeys.keys['APP_SECRET']
+OAUTH_TOKEN 		= TwitterStreamKeys.keys['OAUTH_TOKEN']
+OAUTH_TOKEN_SECRET 	= TwitterStreamKeys.keys['OAUTH_TOKEN_SECRET']
 
 listOfTweets = ''
 
